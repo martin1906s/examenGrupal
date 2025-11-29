@@ -1,1 +1,9 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <span class="logo">Gestor de Tareas</span>
+  <ul class="navbar-links">
+    <li>
+      <a routerLink="/dashboard" routerLinkActive="active">Mis Tareas</a>
+    </li>
+  </ul>
+  <button class="btn-salir" (click)="cerrarSesion()">Cerrar Sesión</button>
+</nav>

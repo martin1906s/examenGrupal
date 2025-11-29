@@ -1,0 +1,53 @@
+.tareas-container {
+  padding: 20px;
+}
+
+.tarea-card {
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.tarea-info h3 {
+  margin: 0;
+}
+
+.tarea-info p {
+  margin: 5px 0;
+}
+
+.btn-estado {
+  padding: 8px;
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-eliminar {
+  background: red;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.agregar-rapido {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.agregar-rapido input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.btn-agregar {
+  padding: 8px;
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
