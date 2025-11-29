@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div class="crear-tarea-container">
+  <h1> Nueva Tarea</h1>
+  
+    <div class="campo">
+      <label for="titulo">Título</label>
+      <input 
+        type="text" 
+        id="titulo"
+        [(ngModel)]="titulo"
+        (ngModelChange)="onTituloChange()"
+        placeholder="Escribe el título de la tarea"
+      />
+      <p class="feedback">Título: {{ titulo }}</p>
+      <p *ngIf="mostrarError" class="error-mensaje">
+         El título es obligatorio
+      </p>
+    </div>
+
+    <div class="campo">
+      <label for="descripcion">Descripción</label>
+      <textarea 
+        id="descripcion"
+        [(ngModel)]="descripcion"
+        placeholder="Describe la tarea..."
+        rows="4"
+      ></textarea>
+      <p class="feedback">Descripción: {{ descripcion }}</p>
+    </div>
+
+    <button class="btn-guardar" (click)="guardarTarea()">
+       Guardar Tarea
+    </button>
+</div>
