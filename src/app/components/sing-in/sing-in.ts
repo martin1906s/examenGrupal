@@ -45,7 +45,7 @@ export class SingIn implements OnInit {
         alert('✅ Registro exitoso! Ahora inicia sesión.');
         console.log('Usuario registrado:', response);
 
-        this.router.navigate(['/login']);
+        this.router.navigate(['/logIn']);
       },
       error: (error) => {
         const errorMessage = error.error?.message || 'Error desconocido al registrar.';
