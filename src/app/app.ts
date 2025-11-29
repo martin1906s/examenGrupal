@@ -1,12 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Login } from './components/login/login';
-import { Navbar } from "./components/navbar/navbar";
-import { CrearTareaComponent } from "./components/crear-tarea/crear-tarea";
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, Navbar, CrearTareaComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
