@@ -1,37 +1,31 @@
 <app-navbar></app-navbar>
 <div class="tareas-container">
   <h1>Mis Tareas</h1>
-  
-    <div 
-      *ngFor="let tarea of tareas" 
-      class="tarea-card"
-      [ngClass]="{'completada': tarea.completed}"
-    >
-      <div class="tarea-info">
-        <h3>{{ tarea.title }}</h3>
-        <p>{{ tarea.description }}</p>
-        <span class="estado-badge" [ngStyle]="{'background-color': tarea.completed ? '#4CAF50' : '#ff9800'}">
-          {{ tarea.completed ? 'Completada' : 'Pendiente' }}
-        </span>
-      </div>
-        <button class="btn-estado" (click)="cambiarEstado(tarea)">
-          Cambiar estado
-        </button>
-        <button class="btn-eliminar" (click)="eliminarTarea(tarea.id)">
-          Eliminar
-        </button>
+
+  <div *ngFor="let tarea of tareas" class="tarea-card" [ngClass]="{'completada': tarea.completed}">
+    <div class="tarea-info">
+      <h3>{{ tarea.title }}</h3>
+      <p>{{ tarea.description }}</p>
+    </div>
+    <div></div>
+    <div class="tarea-actions">
+      <span class="estado-badge actions" [ngStyle]="{'background-color': tarea.completed ? '#4CAF50' : '#ff9800'}">
+        {{ tarea.completed ? 'Completada' : 'Pendiente' }}
+      </span>
+      <button class="btn-estado actions" title="Haz clic para cambiar el estado" (click)="cambiarEstado(tarea)">
+        <i class="fas fa-sync-alt"></i>
+      </button>
+      <button class="btn-eliminar actions" title="Haz clic aquí para eliminar la tarea" (click)="eliminarTarea(tarea.id)">
+        <i class="fa fa-trash-alt" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
 
   <div class="agregar-rapido">
     <h2>Agregar Rápido</h2>
-      <input 
-        type="text" 
-        [(ngModel)]="nuevaTareaRapida"
-        placeholder="Título de la nueva tarea"
-        (focus)="onFocus()"
-        (blur)="onBlur()"
-      />
-      <p class="preview-text">Escribiendo: {{ nuevaTareaRapida }}</p>
-      <button class="btn-agregar" (click)="agregarTareaRapida()">Agregar</button>
+    <input type="text" [(ngModel)]="nuevaTareaRapida" placeholder="Título de la nueva tarea" (focus)="onFocus()"
+      (blur)="onBlur()" />
+    <p class="preview-text">Escribiendo: {{ nuevaTareaRapida }}</p>
+    <button class=" btn btn-agregar" (click)="agregarTareaRapida()">Agregar</button>
   </div>
 </div>

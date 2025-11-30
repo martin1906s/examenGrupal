@@ -37,6 +37,7 @@
 
 .navbar-links a.active {
   background: #5a6fd6;
+  color: #fff
 }
 
 .btn-salir {
@@ -49,4 +50,5 @@
 
 .btn-salir:hover {
   background: #e0e0e0;
+  border-radius: 3px;
 }

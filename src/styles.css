@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
 
+.btn {
+  border-radius: 5px;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
