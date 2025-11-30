@@ -6,8 +6,9 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #bdbdbd;
+    background-color: #f0f0f0;
     height: 100%;
+    padding-top: 50px;
 }
 
 .body {

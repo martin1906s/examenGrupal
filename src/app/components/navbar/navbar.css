@@ -1,13 +1,15 @@
 .navbar {
-  background: #667eea;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
   display: flex;
   padding: 15px 30px;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .logo {
-  color: white;
+  color: #333;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -22,7 +24,7 @@
 
 .navbar-links a {
   padding: 8px 15px;
-  color: white;
+  color: #5f6368;
   text-decoration: none;
 }
 
@@ -37,7 +39,7 @@
 .btn-salir {
   padding: 8px 20px;
   background: white;
-  color: #667eea;
+  color: #5f6368;
   cursor: pointer;
   border: none;
 }
