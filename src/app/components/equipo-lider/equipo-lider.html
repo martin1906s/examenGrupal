@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="equipo-container">
+  <h1> Comunicación entre Componentes</h1>
+  
+  <div class="contador-section">
+    <h2> Contador del Líder</h2>
+    <span class="contador-numero">{{ contador }}</span>
+    <span class="contador-label">clicks recibidos</span>
+  </div>
+
+  <div class="miembros-section">
+    <h2> Miembro del Equipo</h2>
+    <p class="descripcion">
+      Este componente hijo recibe datos del padre 
+    </p>
+    
+    <app-miembro-equipo 
+      [nombreMiembro]="nombreLider"
+      [rolMiembro]="rolLider"
+      (incrementarContador)="incrementar()"
+    ></app-miembro-equipo>
+  </div>
+</div>

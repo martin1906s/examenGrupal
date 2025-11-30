@@ -1,0 +1,65 @@
+.crear-tarea-container {
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 25px;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.crear-tarea-container h1 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.campo input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.campo textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.feedback {
+  margin-top: 5px;
+  color: #888;
+  font-size: 14px;
+}
+
+.error-mensaje {
+  color: red;
+  margin-top: 5px;
+}
+
+.btn-guardar {
+  width: 100%;
+  padding: 12px 25px;
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-guardar:hover {
+  background: #5a6fd6;
+}

@@ -20,16 +20,19 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .navbar-links a {
   padding: 8px 15px;
   color: #5f6368;
   text-decoration: none;
+  border-radius: 3px;
 }
 
 .navbar-links a:hover {
   background: #5a6fd6;
+  color: #ffffff;
 }
 
 .navbar-links a.active {
